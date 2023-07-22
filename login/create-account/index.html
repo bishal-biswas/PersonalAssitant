@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <title>Sign Up</title>
+</head>
+<!--
+    Local Storage for stay logged in
+    Modal Login Option
+-->
+
+<body>
+    <div class="holder">
+        <div class="login-form">
+            <div class="bgdark"></div>
+            <h1>Sign Up</h1>
+            <div id="lgForm">
+                <span>
+                    <label for="FName">First Name</label><input required type="text" name="FName" id="FName">
+                </span>
+                <span>
+                    <label for="LName">Last Name</label><input required type="text" name="LName" id="LName">
+                </span>
+                <span>
+                    <label for="EmailAdd">Email Address</label><input required type="email" name="EmailAdd"
+                        id="EmailAdd">
+                </span>
+                <span>
+                    <label for="Password">Password</label><input required type="password" name="Password" id="Password">
+                </span>
+                <button id="registerBtn" type="submit">Create Account</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="data-holder">
+            <h2>Account Successfully Created</h2>
+            <p id="FullName"><b>Name </b>: </p>
+            <p id="UserN"><b>User Name </b>: </p>
+            <p id="EmailAd"><b>Email Address </b>: </p>
+            <p id="PassW"><b>Password </b>: </p>
+
+            <p><i>* Use your Username and Password as your login credentials</i></p>
+            <a href="/">Click here to Login</a>
+        </div>
+
+    </div>
+    <script src="../GSheetAPI.js"></script>
+    <script type="module" src="../script.js"></script>
+</body>
+
+</html>

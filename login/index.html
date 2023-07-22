@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Login Portal</title>
+</head>
+<!--
+    Local Storage for stay logged in
+    Modal Login Option
+-->
+
+<body>
+    <div class="holder">
+        <div class="login-form">
+            <div class="bgdark"></div>
+            <h1>Login</h1>
+            <div id="lgForm">
+                <span id="loginFieldUserName">
+                    <label for="UserName">Enter User Name</label><input required type="text" placeholder="User Name"
+                        name="UserName" id="UserName">
+                </span>
+                <span id="loginFieldPassword" style="display: none;">
+                    <label for="Password">Enter Password</label><input required type="password" placeholder="Password"
+                        name="Password" id="Password">
+                </span>
+                <span class="staysignedinCls"><input id="staysignedin" type="checkbox"><label for="staysignedin">Stay
+                        Signed in</label></span>
+                <div class="flex">
+                    <button id="loginBtn" type="submit">Proceed</button>
+                </div>
+            </div>
+            <button onclick="window.location = '/create-account/'">Create Account</button>
+        </div>
+    </div>
+    <script src="GSheetAPI.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
